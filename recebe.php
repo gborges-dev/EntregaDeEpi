@@ -1,12 +1,13 @@
 <?php
 
+include 'conexao.php';
+
 $nome = $_POST['nome'];
 $ca = $_POST['ca'];
 $descricao = $_POST['descricao'];
 $qtd = $_POST['qtd'];
 $funcionario = $_POST['funcionario'];
 
-include 'conexao.php';
 
 if ($_POST['id']) {
   $sql = "UPDATE epi SET nm_epi='$nome', ca_epi='$ca',
